@@ -1,12 +1,10 @@
 CC = g++
 
-INCLUDE_PATHS = -IC:\MinGW\mingw32\include
-INCLUDE_PATHS += -I../include
-LIBRARY_PATHS = -LC:\MinGW\mingw32\lib
+INCLUDE_PATHS =
+LIBRARY_PATHS =
 
-CFLAGS = -D_SDL2 -D_WIN32
+CFLAGS = -D_WIN32
 LIBS = -lmingw32
-#LIBS += -mwindows
 TARGET = ../bin2h
 
 OBJS  = $(wildcard src/*.c)
